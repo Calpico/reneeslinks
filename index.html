@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Link List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            font-size: 1.2em;
-            color: #3498db;
-        }
-        a:hover {
-            color: #2980b9;
-        }
-    </style>
+    <title>Renee's Links</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Link List</h1>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Switch Theme</button>
+    </div>
+
+    <h1>Renee's Links</h1>
     <p>Here are some useful links:</p>
-    <a href="https://github.com">GitHub</a>
-    <a href="https://www.google.com">Google</a>
-    <a href="https://stackoverflow.com">Stack Overflow</a>
+    <div class="links">
+        <a href="https://github.com" class="link-btn">GitHub</a>
+        <a href="https://www.google.com" class="link-btn">Google</a>
+        <a href="https://openai.com" class="link-btn">OpenAI</a>
+        <a href="https://stackoverflow.com" class="link-btn">Stack Overflow</a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
