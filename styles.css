@@ -1,0 +1,78 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+}
+
+/* Hover and click states for buttons */
+.link-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.link-btn:active {
+    background-color: #1c6f95;
+    transform: translateY(2px);
+}
+
+/* Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --button-bg: #3498db;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --button-bg: #2980b9;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Cursor Animation */
+body {
+    cursor: url('https://cdn-icons-png.flaticon.com/512/545/545681.png'), auto;
+}
+
+html {
+    --cursor-color: red;
+}
+
+@keyframes cursorAnimation {
+    0% { background-color: var(--cursor-color); }
+    50% { background-color: yellow; }
+    100% { background-color: var(--cursor-color); }
+}
+
+html {
+    --cursor-color: red;
+    cursor: pointer;
+}
+
