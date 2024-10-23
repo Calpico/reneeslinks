@@ -9,19 +9,25 @@ h1 {
     margin-top: 50px;
 }
 
+/* Stack buttons vertically */
 .links {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the buttons horizontally */
 }
 
 .link-btn {
-    display: inline-block;
+    display: block; /* Makes each button take a full row */
+    width: 200px;   /* You can adjust the width */
     padding: 15px 30px;
-    margin: 10px;
+    margin: 10px 0; /* Adds space between the buttons */
     font-size: 1.2em;
     background-color: #3498db;
     color: white;
     text-decoration: none;
     border-radius: 10px;
+    text-align: center; /* Center the text inside the button */
     transition: transform 0.2s, background-color 0.3s;
     cursor: pointer;
 }
@@ -35,6 +41,8 @@ h1 {
 .link-btn:active {
     background-color: #1c6f95;
     transform: translateY(2px);
+}
+
 }
 
 /* Light Theme */
