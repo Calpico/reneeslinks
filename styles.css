@@ -23,7 +23,8 @@ h1 {
     padding: 15px 30px;
     margin: 10px 0; /* Adds space between the buttons */
     font-size: 1.2em;
-    background-color: #3498db;
+    /* background-color: #3498db;*/
+    background-color: #5fffd8;
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -34,7 +35,8 @@ h1 {
 
 /* Hover and click states for buttons */
 .link-btn:hover {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
+    background-color: #55e5c2;
     transform: translateY(-3px);
 }
 
