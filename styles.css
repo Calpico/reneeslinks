@@ -86,3 +86,57 @@ html {
     cursor: pointer;
 }
 
+/* Basic styles for the body and theme toggle */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    position: absolute; /* Position it as desired */
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Hide the default checkbox */
+#toggle {
+    display: none;
+}
+
+/* Styling for the light mode */
+body.light-mode {
+    background-color: white; /* Light background */
+    color: black; /* Light text */
+}
+
+/* Styling for the dark mode */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white; /* Dark text */
+}
+
+/* Styles for the sun/moon icons */
+.toggle-label span {
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+
+.toggle-label .dark {
+    opacity: 0; /* Initially hide the moon icon */
+}
+
+#toggle:checked ~ .toggle-label .light {
+    opacity: 0; /* Hide the sun icon when checked */
+}
+
+#toggle:checked ~ .toggle-label .dark {
+    opacity: 1; /* Show the moon icon when checked */
+}
+
+
