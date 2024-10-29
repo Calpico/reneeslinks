@@ -19,7 +19,7 @@ toggleBtn.addEventListener('click', () => {
     }
 });
 
-<script>
+
     const toggle = document.getElementById('toggle');
     const body = document.body;
 
@@ -38,5 +38,5 @@ toggleBtn.addEventListener('click', () => {
             localStorage.setItem('theme', 'light'); // Save the theme preference
         }
     });
-</script>
+
 
