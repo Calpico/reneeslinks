@@ -1,8 +1,8 @@
-// Theme toggle functionality
+/*// Theme toggle functionality
 const toggleBtn = document.getElementById('theme-toggle-btn');
 const currentTheme = localStorage.getItem('theme') || 'light';
 
-document.documentElement.setAttribute('data-theme', currentTheme);
+document.documentElement.setAttribute('data-theme', currentTheme);        
 
 toggleBtn.textContent = currentTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 
@@ -17,7 +17,7 @@ toggleBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
         toggleBtn.textContent = 'Switch to Dark Mode';
     }
-});
+});*/
 
 
     const toggle = document.getElementById('toggle');
